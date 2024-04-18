@@ -168,7 +168,7 @@ const Footer = () => {
 				<Row className="d-flex justify-content-between align-items-center text-center text-lg-start">
 					<Col md={6}>
 						<p className="mb-0 mt-1">
-							Copyright &copy; Easy Frontend, All rights reserved
+							Copyright &copy; MinaGlobe Innovations, All rights reserved
 						</p>
 					</Col>
 					<Col md={6}>

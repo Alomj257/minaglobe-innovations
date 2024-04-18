@@ -1,4 +1,4 @@
-.ezy__service20 {
+.ezy__testimonial23 {
 	/* Bootstrap variables */
 	--bs-body-color: #28303b;
 	--bs-body-bg: rgb(255, 255, 255);
@@ -11,31 +11,30 @@
 
 	background-color: var(--bs-body-bg);
 	color: var(--bs-body-color);
-	position: relative;
-	padding: 20px 5% !important;
-	z-index: 1;
 	overflow: hidden;
+	position: relative;
+	padding: 50px 6% !important;
 }
 
 @media (min-width: 768px) {
-	.ezy__service20 {
+	.ezy__testimonial23 {
 		padding: 100px 0;
 	}
 }
 
 /* Gray Block Style */
-.gray .ezy__service20,
-.ezy__service20.gray {
+.gray .ezy__testimonial23,
+.ezy__testimonial23.gray {
 	/* Bootstrap variables */
 	--bs-body-bg: rgb(246, 246, 246);
 
 	/* Easy Frontend variables */
-	--ezy-card-bg: #f6f6f6;
+	--ezy-card-bg: #fff;
 }
 
 /* Dark Gray Block Style */
-.dark-gray .ezy__service20,
-.ezy__service20.dark-gray {
+.dark-gray .ezy__testimonial23,
+.ezy__testimonial23.dark-gray {
 	/* Bootstrap variables */
 	--bs-body-color: #ffffff;
 	--bs-body-bg: rgb(30, 39, 53);
@@ -45,8 +44,9 @@
 	--ezy-card-box-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
 }
 
-.dark .ezy__service20,
-.ezy__service20.dark {
+/* Dark Block Style */
+.dark .ezy__testimonial23,
+.ezy__testimonial23.dark {
 	/* Bootstrap variables */
 	--bs-body-color: #ffffff;
 	--bs-body-bg: rgb(11, 23, 39);
@@ -56,40 +56,50 @@
 	--ezy-card-box-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
 }
 
-.ezy__service20-heading {
+.ezy__testimonial23-heading {
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 32px;
 	line-height: 1.5;
 }
-
-@media (min-width: 768px) {
-	.ezy__service20-heading {
-		font-size: 38px;
-	}
-}
-
-.ezy__service20-sub-heading {
-	font-size: 17px;
-	line-height: 1.5;
+.ezy__testimonial23-sub-heading {
 	opacity: 0.8;
+	font-size: 18px;
+	line-height: 1.7;
 }
 
 /* shapes */
-.ezy__service20-shape-one {
-	z-index: -1;
-	bottom: -20%;
+.ezy__testimonial23-shape-one {
+	position: absolute;
+	bottom: 0;
 	left: 0;
 }
-.ezy__service20-shape-two {
-	z-index: -1;
-	top: -20%;
+.ezy__testimonial23-shape-two {
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
-.ezy__service20-card {
+.ezy__testimonial23-item {
 	background-color: var(--ezy-card-bg);
 	box-shadow: var(--ezy-card-box-shadow);
 }
-.ezy__service20-icon {
-	font-size: 40px;
-	color: var(--ezy-theme-color);
+
+/* indicators */
+.ezy__testimonial23 .carousel-indicators {
+	margin: 0;
+	bottom: -50px;
+}
+
+.ezy__testimonial23 .carousel-indicators button {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: var(--bs-body-color);
+	opacity: 0.2;
+}
+
+.ezy__testimonial23 .carousel-indicators button.active {
+	background-color: rgba(var(--ezy-theme-color-rgb), 1) !important;
+	color: rgba(var(--ezy-theme-color-rgb), 1) !important;
+	opacity: 1;
 }
